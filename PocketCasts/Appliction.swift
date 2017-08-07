@@ -25,7 +25,7 @@ class Appliction: NSApplication {
                 let keyRepeat = (keyFlags & 0x1) == 1
                 
                 if !keyRepeat && keyState {
-                    handleMediaKey(key: key)
+                    InjectionController.shared.handleMediaKey(key: key)
                 }
             }
         } else {
