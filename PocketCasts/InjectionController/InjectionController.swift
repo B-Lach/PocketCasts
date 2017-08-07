@@ -13,6 +13,8 @@ class InjectionController: NSObject {
     static let shared = InjectionController()
     
     private let events = ["mediaPlayer"]
+    private var playerVisible = false
+    private var webview: WKWebView?
     
     private override init() {}
 }
@@ -35,7 +37,7 @@ extension InjectionController {
             let config = WKWebViewConfiguration()
             config.userContentController = controller
             
-            let webview = WKWebView(frame: .zero, configuration: config)
+            webview = WKWebView(frame: .zero, configuration: config)
             
             return webview
         }
@@ -46,6 +48,28 @@ extension InjectionController {
 // MARK: - WKScriptMessageHandler Delegate
 extension InjectionController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        print("Did receive msg from js: ", message.body)
+        if let visible = (message.body as? [String: Bool])?["new"] {
+            // TODO: Handle other apps playing audio - macOS 10.13 has AVFoundation
+            playerVisible = visible
+        }
+    }
+}
+
+// MARK: - MediaKey Handler
+extension InjectionController {
+    func handleMediaKey(key: MediaKey) {
+        if playerVisible {
+            let string: String
+            
+            switch key {
+            case .backward:
+                string = "handleBackwardMediaKey()"
+            case .forward:
+                string = "hanldeForwardMediaKey()"
+            case .playPause:
+                string = "handlePlayPauseMediaKey()"
+            }
+            webview?.evaluateJavaScript(string, completionHandler: nil)
+        }
     }
 }
