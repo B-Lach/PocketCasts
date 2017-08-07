@@ -14,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        NSApplication.shared.keyWindow?.title = "Pocket Casts for Mac"
         // Insert code here to initialize your application
     }
 
