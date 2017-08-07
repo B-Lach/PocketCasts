@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2B93EE1F38D286008082CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ED3781D91F38AAA5003C571B /* PocketCasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketCasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3781DC1F38AAA5003C571B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED3781DE1F38AAA5003C571B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		ED3781DB1F38AAA5003C571B /* PocketCasts */ = {
 			isa = PBXGroup;
 			children = (
+				ED2B93EE1F38D286008082CC /* README.md */,
 				ED3781FD1F38B19A003C571B /* InjectionController */,
 				ED3781DC1F38AAA5003C571B /* AppDelegate.swift */,
 				ED3781DE1F38AAA5003C571B /* ViewController.swift */,
