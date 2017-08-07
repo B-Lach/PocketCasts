@@ -13,6 +13,9 @@
 		ED3781E41F38AAA5003C571B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3781E21F38AAA5003C571B /* Main.storyboard */; };
 		ED3781F01F38AAA5003C571B /* PocketCastsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3781EF1F38AAA5003C571B /* PocketCastsTests.swift */; };
 		ED3781FC1F38AAD1003C571B /* Appliction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3781FB1F38AAD1003C571B /* Appliction.swift */; };
+		ED3781FF1F38B1B1003C571B /* InjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3781FE1F38B1B1003C571B /* InjectionController.swift */; };
+		ED3782011F38B418003C571B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3782001F38B418003C571B /* Constants.swift */; };
+		ED3782031F38B8EB003C571B /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = ED3782021F38B8EB003C571B /* inject.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		ED3781EF1F38AAA5003C571B /* PocketCastsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCastsTests.swift; sourceTree = "<group>"; };
 		ED3781F11F38AAA5003C571B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3781FB1F38AAD1003C571B /* Appliction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appliction.swift; sourceTree = "<group>"; };
+		ED3781FE1F38B1B1003C571B /* InjectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionController.swift; sourceTree = "<group>"; };
+		ED3782001F38B418003C571B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED3782021F38B8EB003C571B /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = inject.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		ED3781DB1F38AAA5003C571B /* PocketCasts */ = {
 			isa = PBXGroup;
 			children = (
+				ED3781FD1F38B19A003C571B /* InjectionController */,
 				ED3781DC1F38AAA5003C571B /* AppDelegate.swift */,
 				ED3781DE1F38AAA5003C571B /* ViewController.swift */,
 				ED3781E01F38AAA5003C571B /* Assets.xcassets */,
@@ -85,6 +92,7 @@
 				ED3781E51F38AAA5003C571B /* Info.plist */,
 				ED3781E61F38AAA5003C571B /* PocketCasts.entitlements */,
 				ED3781FB1F38AAD1003C571B /* Appliction.swift */,
+				ED3782001F38B418003C571B /* Constants.swift */,
 			);
 			path = PocketCasts;
 			sourceTree = "<group>";
@@ -96,6 +104,15 @@
 				ED3781F11F38AAA5003C571B /* Info.plist */,
 			);
 			path = PocketCastsTests;
+			sourceTree = "<group>";
+		};
+		ED3781FD1F38B19A003C571B /* InjectionController */ = {
+			isa = PBXGroup;
+			children = (
+				ED3781FE1F38B1B1003C571B /* InjectionController.swift */,
+				ED3782021F38B8EB003C571B /* inject.js */,
+			);
+			path = InjectionController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +198,7 @@
 			files = (
 				ED3781E11F38AAA5003C571B /* Assets.xcassets in Resources */,
 				ED3781E41F38AAA5003C571B /* Main.storyboard in Resources */,
+				ED3782031F38B8EB003C571B /* inject.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3782011F38B418003C571B /* Constants.swift in Sources */,
 				ED3781FC1F38AAD1003C571B /* Appliction.swift in Sources */,
 				ED3781DF1F38AAA5003C571B /* ViewController.swift in Sources */,
 				ED3781DD1F38AAA5003C571B /* AppDelegate.swift in Sources */,
+				ED3781FF1F38B1B1003C571B /* InjectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
